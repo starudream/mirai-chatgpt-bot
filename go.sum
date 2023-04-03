@@ -186,8 +186,8 @@ github.com/starudream/go-lib v1.12.3 h1:BGTdtOruW0D27ptxhM78PjccEcfnPbLh/BvmVlk2
 github.com/starudream/go-lib v1.12.3/go.mod h1:NIQqS3lv+s+iqZleP+1JRPgqExF9oX0tSNh6qDGwug0=
 github.com/starudream/mirai-go v0.0.4 h1:0A80Q1J4gLhSRImGsyZqF1gZlztI9tt7B8r42nKdVtM=
 github.com/starudream/mirai-go v0.0.4/go.mod h1:Iu1ahBFvpNCydidJ/dMOkd+ffdUgyJK40VBAbBBy1nA=
-github.com/starudream/openai-go v0.0.4 h1:8crIDYBQTY6oXdB/a/8W7es7BjCmxZyizYyH6cVrUnM=
-github.com/starudream/openai-go v0.0.4/go.mod h1:fMGxZy3tXneb7fmShBiRmtwgFrMo845HFbpFNEPpJ2Q=
+github.com/starudream/openai-go v0.0.5 h1:nwhmnd3ojL3K3yTx+F58D8pqyC5IKKjiMFIQtjfVMlw=
+github.com/starudream/openai-go v0.0.5/go.mod h1:fMGxZy3tXneb7fmShBiRmtwgFrMo845HFbpFNEPpJ2Q=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/objx v0.4.0/go.mod h1:YvHI0jy2hoMjB+UWwv71VJQ9isScKT/TqJzVSSt89Yw=
 github.com/stretchr/objx v0.5.0/go.mod h1:Yh+to48EsGEfYuaHDzXPcE3xhTkx73EhmCGUpEOglKo=

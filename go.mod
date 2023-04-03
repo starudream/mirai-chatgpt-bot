@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/starudream/go-lib v1.12.3
 	github.com/starudream/mirai-go v0.0.4
-	github.com/starudream/openai-go v0.0.4
+	github.com/starudream/openai-go v0.0.5
 	github.com/tidwall/gjson v1.14.4
 )
 
