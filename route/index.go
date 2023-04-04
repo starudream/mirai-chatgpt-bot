@@ -18,15 +18,22 @@ import (
 const modelGPT35 = "gpt-3.5-turbo"
 
 var (
-	botQQ       int64
-	targetGroup int64
+	botQQ int64
+
+	targetGroups = map[int64]bool{}
 
 	openaiClient *openai.Client
 )
 
 func init() {
 	botQQ = config.GetInt64("mirai.bot_qq")
-	targetGroup = config.GetInt64("mirai.target_group")
+
+	_targetGroup := config.GetInt("mirai.target_group")
+	targetGroups[int64(_targetGroup)] = true
+	_targetGroups := config.GetIntSlice("mirai.target_groups")
+	for _, tg := range _targetGroups {
+		targetGroups[int64(tg)] = true
+	}
 
 	apiKey := config.GetString("openai.api_key")
 	if apiKey == "" {
@@ -56,7 +63,9 @@ func index(c *router.Context) {
 		return
 	}
 
-	if gjson.Get(body, "sender.group.id").Int() != targetGroup {
+	target := gjson.Get(body, "sender.group.id").Int()
+
+	if !targetGroups[target] {
 		return
 	}
 
@@ -91,7 +100,7 @@ func index(c *router.Context) {
 	resp := &Resp{
 		Command: "sendGroupMessage",
 		Content: &mirai.SendMessageReq{
-			Target: targetGroup,
+			Target: target,
 			Quote:  messageId,
 			MessageChain: []mirai.MessageInfoInterface{
 				&mirai.MessageInfoAt{

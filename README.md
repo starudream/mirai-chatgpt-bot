@@ -16,7 +16,9 @@ openai:
   api_key: abc
 mirai:
   bot_qq: 000
-  target_group: 111
+  target_groups:
+    - 222
+    - 333
 ```
 
 ## Docker
