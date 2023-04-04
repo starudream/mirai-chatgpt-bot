@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/starudream/mirai-chatgpt-bot/compare/v1.0.0...v1.1.0) (2023-04-04)
+
+
+### Features
+
+* add target groups ([4f03d1e](https://github.com/starudream/mirai-chatgpt-bot/commit/4f03d1eec0b07ed63ac64e390f8e2f663b31d59f))
+
 ## 1.0.0 (2023-03-31)
 
 
